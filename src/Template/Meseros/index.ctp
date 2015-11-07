@@ -6,7 +6,7 @@
  <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Nuevo Mesero'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
 
@@ -37,8 +37,8 @@
              </td>
              <td><?php echo $mesero->apellido  ?></td>
              <td><?php echo $mesero->telefono  ?></td>
-             <td><?php echo $mesero->created->format('F jS, Y h:i A')  ?></td>
-             <td><?php echo $mesero->modified->format('F jS, Y h:i A')  ?></td>
+             <td><?php echo $mesero->created ?></td>
+             <td><?php echo $mesero->modified ?></td>
              <td><?php echo $this->Html->link('Ver',array ('action' => 'view',$mesero->id )) ?></td>
             </tr>
             

@@ -15,20 +15,20 @@
   <h1><?= ($meseros->nombre . "&nbsp" . $meseros->apellido); ?></h1>
   <h5>Alta de mesero <?= ($meseros->created) ?></h5>
   <hr>
-   <?php echo $this->Form->create($meseros);?>
    
-   <?php echo $this->Form->input('nombre'); ?>
+   <label for="">Nombre:</label>
+   <input type="text" class="large-3 medium-4 columns" value="<?= ($meseros->nombre); ?>" readonly>
 
-   <?php echo $this->Form->input('apellido'); ?>
+   <label for="">Apellido:</label>
+   <input type="text" class="large-3 medium-4 columns" value="<?= ($meseros->apellido); ?>" readonly>
 
-   <?php echo $this->Form->input('telefono'); ?>
+   <label for="">Telefono:</label>
+   <input type="text" class="large-3 medium-4 columns" value="<?= ($meseros->telefono); ?>" readonly>
 
-   <?php echo $this->Form->input('ife'); ?>
+   <label for="">IFE:</label>
+   <input type="text" class="large-3 medium-4 columns" value="<?= ($meseros->ife); ?>" readonly>
 
-   <?php echo $this->Form->button(__('Guardar Mesero')); ?>
    
-
-   <?php echo $this->end();?>
 
 
     
