@@ -28,15 +28,15 @@ class MeserosController extends AppController {
         if ($this->request->is('post')) {
             $meseros = $this->Meseros->patchEntity($meseros, $this->request->data);
             if ($this->Meseros->save($meseros)) {
-                $this->Flash->success(__('Mesero Guardado con Exito!.'));
+                $this->Flash->success(__('Mesero Guardado con Exito!'));
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('No pudimos Gardar el Mesero.'));
         }
         $this->set('meseros', $meseros);
-  	
-    }
-
+  	}
+    
+    
     
     
 }
